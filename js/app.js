@@ -12,4 +12,10 @@
     "$stateProvider",
     RouterFunction
   ])
+  function RouterFunction($stateProvider){
+   $stateProvider
+   .state("welcome", {
+     url: "",
+     templateUrl: "js/welcome.html"
+   })
 })();
