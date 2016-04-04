@@ -11,7 +11,7 @@
   .config([
     "$stateProvider",
     RouterFunction
-  ])
+  ]);
   function RouterFunction($stateProvider){
    $stateProvider
    .state("welcome", {

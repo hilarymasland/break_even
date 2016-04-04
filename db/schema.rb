@@ -11,9 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160404145418) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "days", force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "exercises", force: :cascade do |t|
+    t.string  "name"
+    t.string  "image_url"
+    t.integer "quantity"
+    t.integer "calorie"
+    t.integer "day_id"
+  end
+
+  add_index "exercises", ["day_id"], name: "index_exercises_on_day_id", using: :btree
+
+  add_foreign_key "exercises", "days"
 end
