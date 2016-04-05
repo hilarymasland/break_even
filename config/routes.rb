@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :exercises
 
   resources :days do
-    resources :exercises, :drinks
+    resources :exercises, :rewards
   end
 
 
