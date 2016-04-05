@@ -5426,3 +5426,20 @@ Migrations are pending. To resolve this issue, run:
   Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (104.0ms)
+  [1m[36m (3.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateExercises (20160318150111)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.1ms)[0m  [1mCREATE TABLE "exercises" ("id" serial primary key, "exercise_name" character varying, "calories_burned" integer, "quantity" integer, "reps" integer, "day" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer) [0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX  "index_exercises_on_user_id" ON "exercises"  ("user_id")
+  [1m[36m (2.2ms)[0m  [1mALTER TABLE "exercises" ADD CONSTRAINT "fk_rails_f4f6893528"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+PG::UndefinedTable: ERROR:  relation "users" does not exist
+: ALTER TABLE "exercises" ADD CONSTRAINT "fk_rails_f4f6893528"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
