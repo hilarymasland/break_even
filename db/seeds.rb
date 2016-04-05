@@ -11,6 +11,8 @@ data = JSON.parse(File.read("db/exercises_data.json"))
 
 Exercise.destroy_all
 Drink.destroy_all
+Users.destroy_all
+Days.destroy_all
 
 Exercise.create(exercise_name: "Stationary Bike", calories_burned: 8, quantity:'', reps:'', day:'')
 Exercise.create(exercise_name: "Elliptical", calories_burned: 11, quantity:'', reps:'', day:'')

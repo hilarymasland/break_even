@@ -5443,3 +5443,20 @@ FOREIGN KEY ("user_id")
   REFERENCES "users" ("id")
 
   [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateExercises (20160318150111)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "exercises" ("id" serial primary key, "exercise_name" character varying, "calories_burned" integer, "quantity" integer, "reps" integer, "day" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer) [0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX  "index_exercises_on_user_id" ON "exercises"  ("user_id")
+  [1m[36m (1.8ms)[0m  [1mALTER TABLE "exercises" ADD CONSTRAINT "fk_rails_f4f6893528"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+PG::UndefinedTable: ERROR:  relation "users" does not exist
+: ALTER TABLE "exercises" ADD CONSTRAINT "fk_rails_f4f6893528"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[35m (0.1ms)[0m  ROLLBACK
