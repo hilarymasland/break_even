@@ -2,7 +2,7 @@ class ExercisesController < ApplicationController
 
   def index
 
-    respond to do |format|
+    respond_to do |format|
       format.html
       format.json{ render json: Exercise.all }
     end
