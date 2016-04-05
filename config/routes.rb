@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
-  resources :welcome
-  resources :exercises
+  resources :days do
+     :exercises
+   end
   root 'welcome#index'
+
+
+  # //we don't have to keep these nested I am just testing things HDM
+
+
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
