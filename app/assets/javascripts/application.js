@@ -43,19 +43,19 @@
     })
   } // closes Router Function
 }());
-.controller("break_even_controller", BreakEvenController);
+// .controller("break_even_controller", BreakEvenController);
 
-function BreakEvenController(){
-  var vm = this;
-  vm.data = data;
-  vm.total_value = function(){
-    var total = 0;
-    vm.data.forEach(function(product){
-      if(product.quantity){
-        total += (product.quantity * product.cost);
-      }
-    });
-    return total.toFixed(2);
-  }
-}
-})();
+// function BreakEvenController(){
+//   var vm = this;
+//   vm.data = data;
+//   vm.total_value = function(){
+//     var total = 0;
+//     vm.data.forEach(function(product){
+//       if(product.quantity){
+//         total += (product.quantity * product.cost);
+//       }
+//     });
+//     return total.toFixed(2);
+//   }
+// }
+// })();

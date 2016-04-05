@@ -31,25 +31,25 @@
       </tr>
     </thead>
     <tbody>
-      <tr data-ng-repeat="product in vm.data | filter: vm.filter_on | orderBy: vm.sort_on : vm.is_descending">
+      <tr data-ng-repeat="exercise in vm.data | filter: vm.filter_on | orderBy: vm.sort_on : vm.is_descending">
         <!-- change table info^ -->
         <td>{{$index  1}}</td>
         <!-- change table info^ -->
         <td>
-          <img data-ng-src="{{product.image_url}}" alt="#" />
+          <img data-ng-src="{{exercise.image_url}}" alt="#" />
           <!-- change table info^ -->
-          <a data-ng-href="{{product.url}}" tabindex="-1">{{product.name}}</a>
+          <a data-ng-href="{{exercise.url}}" tabindex="-1">{{exercise.name}}</a>
           <!-- change table info^ -->
         </td>
-        <td>{{product.cost.toFixed(2)}}</td>
+        <td>{{exercise.cost.toFixed(2)}}</td>
         <!-- change table info^ -->
         <td>
-          <input type="number" data-ng-model="product.quantity" />
+          <input type="number" data-ng-model="exercise.quantity" />
         </td>
-        <td>{{product.country}}</td>
+        <td>{{exercise.name}}</td>
         <!-- change table info^ -->
         <td>
-          <input type="text" data-ng-model="product.notes" />
+          <input type="text" data-ng-model="exercise.notes" />
           <!-- change table info^ -->
         </td>
       </tr>
