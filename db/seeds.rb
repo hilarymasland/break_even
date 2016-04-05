@@ -5,6 +5,3 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-data = JSON.parse(File.read("db/exercises_data.json"))
-Exercise.destroy_all
-Exercise.create!(data)
