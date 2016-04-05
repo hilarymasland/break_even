@@ -7,7 +7,6 @@ class CreateExercises < ActiveRecord::Migration
       t.integer :reps
       t.string :day
       t.timestamps null: false
-      t.references :user, index: true, foreign_key: true
     end
   end
 end
