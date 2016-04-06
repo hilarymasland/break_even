@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
 
   root "welcome#index"
-
+  resources :welcome
+  resources :user
   resources :exercises
+  resources :drinks
+  resources :days
 
-  resources :days do
-    resources :exercises, :rewards
+  resources :users do
+    resources :exercises
   end
 
 
