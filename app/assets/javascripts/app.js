@@ -21,7 +21,7 @@
       url: "/exercises",
       templateUrl: "ngviews/exercises.html",
       controller: "ExerciseIndexController",
-      controllerAs: "vm"
+      controllerAs: "eindexVm"
     })
     // .state("grumbleNew", {
     //   url: "/grumbles/new",
