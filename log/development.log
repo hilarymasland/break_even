@@ -4114,3 +4114,30 @@ Processing by DaysController#show as JSON
   Parameters: {"id"=>"1"}
   [1m[35mDay Load (0.3ms)[0m  SELECT  "days".* FROM "days" WHERE "days"."id" = $1 LIMIT 1  [["id", 1]]
 Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/days/1.json" for ::1 at 2016-04-06 19:04:22 -0400
+
+SyntaxError (/Users/hilarymasland/wdi/projects/break_even/app/controllers/days_controller.rb:56: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/days_controller.rb:56: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.0ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.4ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (87.1ms)
+
+
+Started GET "/days/1.json" for ::1 at 2016-04-06 19:05:30 -0400
+Processing by DaysController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mDay Load (0.2ms)[0m  [1mSELECT  "days".* FROM "days" WHERE "days"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 2.2ms)

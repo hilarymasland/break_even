@@ -13,15 +13,11 @@ class DaysController < ApplicationController
 
   def create
     @day = Day.new(day_params)
-    respond_to do |format|
-      format.html
-      format.json {
         if @day.save
           render json: @day.to_json, status: :created
         else
           render json: @day.errors, status: :unprocessable_entity
         end
-      }
   end
 
   def show
