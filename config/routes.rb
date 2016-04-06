@@ -1,7 +1,17 @@
 Rails.application.routes.draw do
+
+  root "welcome#index"
   resources :welcome
+  resources :user
   resources :exercises
-  root 'welcome#index'
+  resources :drinks
+  resources :days
+
+  resources :users do
+    resources :exercises
+  end
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
