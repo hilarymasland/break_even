@@ -1,0 +1,149 @@
+  [1m[36m (3.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateExercises (20160318150111)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE "exercises" ("id" serial primary key, "exercise_name" character varying, "calories_burned" integer, "quantity" integer, "reps" integer, "day" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160318150111"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDays (20160405203704)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "days" ("id" serial primary key, "name_of_day" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160405203704"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateDrinks (20160405203730)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "drinks" ("id" serial primary key, "drink_type" character varying, "calorie_count" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160405203730"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20160405210817)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (6.7ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160405210817"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (5.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'days'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'drinks'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'exercises'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.3ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mExercise Load (0.9ms)[0m  SELECT "exercises".* FROM "exercises"  ORDER BY updated_at DESC
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mDay Load (0.5ms)[0m  [1mSELECT "days".* FROM "days"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["exercise_name", "Stationary Bike"], ["calories_burned", 8], ["day", ""], ["created_at", "2016-04-06 14:58:57.320554"], ["updated_at", "2016-04-06 14:58:57.320554"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["exercise_name", "Elliptical"], ["calories_burned", 11], ["day", ""], ["created_at", "2016-04-06 14:58:57.326066"], ["updated_at", "2016-04-06 14:58:57.326066"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["exercise_name", "Running"], ["calories_burned", 11], ["day", ""], ["created_at", "2016-04-06 14:58:57.328006"], ["updated_at", "2016-04-06 14:58:57.328006"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["exercise_name", "Pull Ups"], ["calories_burned", 9], ["day", ""], ["created_at", "2016-04-06 14:58:57.330138"], ["updated_at", "2016-04-06 14:58:57.330138"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["exercise_name", "Push-ups"], ["calories_burned", 9], ["day", ""], ["created_at", "2016-04-06 14:58:57.332485"], ["updated_at", "2016-04-06 14:58:57.332485"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["exercise_name", "Sit-ups"], ["calories_burned", 9], ["day", ""], ["created_at", "2016-04-06 14:58:57.334513"], ["updated_at", "2016-04-06 14:58:57.334513"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["exercise_name", "Pilates"], ["calories_burned", 3], ["day", ""], ["created_at", "2016-04-06 14:58:57.336444"], ["updated_at", "2016-04-06 14:58:57.336444"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["exercise_name", "Yoga"], ["calories_burned", 3], ["day", ""], ["created_at", "2016-04-06 14:58:57.338403"], ["updated_at", "2016-04-06 14:58:57.338403"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["exercise_name", "Crunches"], ["calories_burned", 3], ["day", ""], ["created_at", "2016-04-06 14:58:57.340091"], ["updated_at", "2016-04-06 14:58:57.340091"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["exercise_name", "Aerobics"], ["calories_burned", 8], ["day", ""], ["created_at", "2016-04-06 14:58:57.342952"], ["updated_at", "2016-04-06 14:58:57.342952"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "exercises" ("exercise_name", "calories_burned", "day", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["exercise_name", "Dancing"], ["calories_burned", 5], ["day", ""], ["created_at", "2016-04-06 14:58:57.345128"], ["updated_at", "2016-04-06 14:58:57.345128"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "drinks" ("drink_type", "calorie_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["drink_type", "glass of red wine"], ["calorie_count", 80], ["created_at", "2016-04-06 14:58:57.349797"], ["updated_at", "2016-04-06 14:58:57.349797"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "drinks" ("drink_type", "calorie_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["drink_type", "glass of white wine"], ["calorie_count", 80], ["created_at", "2016-04-06 14:58:57.351812"], ["updated_at", "2016-04-06 14:58:57.351812"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "drinks" ("drink_type", "calorie_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["drink_type", "bottle or can of beer"], ["calorie_count", 144], ["created_at", "2016-04-06 14:58:57.353816"], ["updated_at", "2016-04-06 14:58:57.353816"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drinks" ("drink_type", "calorie_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["drink_type", "shot of scotch"], ["calorie_count", 65], ["created_at", "2016-04-06 14:58:57.355354"], ["updated_at", "2016-04-06 14:58:57.355354"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "drinks" ("drink_type", "calorie_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["drink_type", "shot of vodka"], ["calorie_count", 64], ["created_at", "2016-04-06 14:58:57.356865"], ["updated_at", "2016-04-06 14:58:57.356865"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drinks" ("drink_type", "calorie_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["drink_type", "pint of beer"], ["calorie_count", 280], ["created_at", "2016-04-06 14:58:57.358929"], ["updated_at", "2016-04-06 14:58:57.358929"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "days" ("name_of_day", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name_of_day", "Sunday"], ["created_at", "2016-04-06 14:58:57.363079"], ["updated_at", "2016-04-06 14:58:57.363079"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "days" ("name_of_day", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name_of_day", "Monday"], ["created_at", "2016-04-06 14:58:57.365269"], ["updated_at", "2016-04-06 14:58:57.365269"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "days" ("name_of_day", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name_of_day", "Tuesday"], ["created_at", "2016-04-06 14:58:57.366856"], ["updated_at", "2016-04-06 14:58:57.366856"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "days" ("name_of_day", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name_of_day", "Wednesday"], ["created_at", "2016-04-06 14:58:57.368268"], ["updated_at", "2016-04-06 14:58:57.368268"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "days" ("name_of_day", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name_of_day", "Thursday"], ["created_at", "2016-04-06 14:58:57.369733"], ["updated_at", "2016-04-06 14:58:57.369733"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "days" ("name_of_day", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name_of_day", "Friday"], ["created_at", "2016-04-06 14:58:57.371268"], ["updated_at", "2016-04-06 14:58:57.371268"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "days" ("name_of_day", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name_of_day", "Saturday"], ["created_at", "2016-04-06 14:58:57.372628"], ["updated_at", "2016-04-06 14:58:57.372628"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m

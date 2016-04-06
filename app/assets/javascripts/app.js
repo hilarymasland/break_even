@@ -14,21 +14,21 @@
   function RouterFunction($stateProvider){
     $stateProvider
     .state("welcome",{
-    url: "/",
-    templateUrl: "ngviews/home.html",
+      url: "/",
+      templateUrl: "ngviews/home.html",
     })
-      .state("exercises", {
+    .state("exercises", {
       url: "/exercises",
       templateUrl: "ngviews/exercises.html",
       controller: "ExerciseIndexController",
       controllerAs: "ExerciseIndexViewModel"
     })
-    .state("days", {
-    url: "/days",
-    templateUrl: "ngviews/myWeek.html",
-    controller: "DayIndexController",
-    controllerAs: "DayIndexViewModel"
-  })
+    .state("daysIndex", {
+      url: "/days",
+      templateUrl: "ngviews/myWeek.html",
+      controller: "DayIndexController",
+      controllerAs: "DayIndexViewModel"
+    })
     .state("dayShow", {
       url: "/day/:id",
       templateUrl: "ngviews/day.html",
