@@ -5,7 +5,7 @@
 (function (){
   angular
   .module("breakEven")
-  .controller("ExercisesIndexController", function(){
+  .controller("ExerciseIndexController", function(){
     this.test = "poop";
   })
 })();

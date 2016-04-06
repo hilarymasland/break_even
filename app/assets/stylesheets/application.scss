@@ -18,6 +18,9 @@
   box-sizing:border-box;
   font-family: 'Montserrat Subrayada', sans-serif;
 }
+body{
+  margin:auto;
+}
 
 .new-body{
   background: url("barbell.jpg") no-repeat center center fixed;
@@ -39,10 +42,6 @@
 }
 .navbutton:hover {
   color: rgb(163, 22, 0);
-}
-
-body{
-  margin:auto;
 }
 
 .lead {

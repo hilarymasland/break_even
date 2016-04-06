@@ -5,7 +5,7 @@
   angular
   .module("breakEven", [
     "ui.router",
-    "ngResource",
+    "ngResource"
   ])
   .config([
     "$stateProvider",
@@ -13,27 +13,28 @@
   ])
   function RouterFunction($stateProvider){
     $stateProvider
-    .state("welcome", {
-      url: "/"
+    .state("welcome",{
+    url: "/",
+    templateUrl: "ngviews/home.html",
     })
-      .state("exerciseIndex", {
+      .state("exercises", {
       url: "/exercises",
-      templateUrl: "js/grumbles/index.html",
-      controller: "GrumbleIndexController",
-      controllerAs: "GrumbleIndexViewModel"
+      templateUrl: "ngviews/exercises.html",
+      controller: "ExerciseIndexController",
+      controllerAs: "vm"
     })
-    .state("grumbleNew", {
-      url: "/grumbles/new",
-      templateUrl: "js/grumbles/new.html",
-      controller: "GrumbleNewController",
-      controllerAs: "GrumbleNewViewModel"
-    })
-    .state("grumbleShow", {
-      url: "/grumbles/:id",
-      templateUrl: "js/grumbles/show.html",
-      controller: "GrumbleShowController",
-      controllerAs: "GrumbleShowViewModel"
-    })
+    // .state("grumbleNew", {
+    //   url: "/grumbles/new",
+    //   templateUrl: "js/grumbles/new.html",
+    //   controller: "GrumbleNewController",
+    //   controllerAs: "GrumbleNewViewModel"
+    // })
+    // .state("grumbleShow", {
+    //   url: "/grumbles/:id",
+    //   templateUrl: "js/grumbles/show.html",
+    //   controller: "GrumbleShowController",
+    //   controllerAs: "GrumbleShowViewModel"
+    // })
     .state("grumbleEdit", {
       url: "/grumbles/:id/edit",
       templateUrl: "js/grumbles/edit.html",
@@ -42,23 +43,3 @@
     })
   } // closes Router Function
 }());
-
-
-
-
-// .controller("break_even_controller", BreakEvenController);
-
-// function BreakEvenController(){
-//   var vm = this;
-//   vm.data = data;
-//   vm.total_value = function(){
-//     var total = 0;
-//     vm.data.forEach(function(product){
-//       if(product.quantity){
-//         total += (product.quantity * product.cost);
-//       }
-//     });
-//     return total.toFixed(2);
-//   }
-// }
-// })();
