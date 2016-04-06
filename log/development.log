@@ -5833,3 +5833,1605 @@ ORDER BY c.conname
   [1m[35m (0.1ms)[0m  BEGIN
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "drinks" ("drink_type", "calorie_count", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["drink_type", "pint of beer"], ["calorie_count", 280], ["created_at", "2016-04-05 23:09:07.986834"], ["updated_at", "2016-04-05 23:09:07.986834"]]
   [1m[35m (0.2ms)[0m  COMMIT
+
+
+Started GET "/" for ::1 at 2016-04-05 19:15:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1609ms (Views: 1599.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:15:19 -0400
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:15:19 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:15:19 -0400
+
+
+Started GET "/assets/application.self-81e2723a0e70693d01e8c04a020c3555f11a9cdee8784ee111f3a7944f73c0c1.css?body=1" for ::1 at 2016-04-05 19:15:19 -0400
+
+
+Started GET "/assets/angular-resource.self-36da73106d179b808ab3301d2c926ff217b0e79762ec6009787ac719d5f5b8d4.js?body=1" for ::1 at 2016-04-05 19:15:19 -0400
+
+
+Started GET "/assets/angular.self-ebb3ae214db094f5ad3824c69b92b7c576e793fe5f2307aabbdce186e884383c.js?body=1" for ::1 at 2016-04-05 19:15:19 -0400
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2016-04-05 19:15:19 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.7ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.7ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (51.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (99.1ms)
+
+
+Started GET "/javascripts/application.js" for ::1 at 2016-04-05 19:15:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.8ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (81.7ms)
+
+
+Started GET "/assets/application.self-2975de362e3d28c0806bb2f15af9e87db587c2869e1f6b8f388a9c50db54e5dc.js?body=1" for ::1 at 2016-04-05 19:15:20 -0400
+
+
+Started GET "/images/belly.jpg" for ::1 at 2016-04-05 19:15:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/belly.jpg"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (101.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 19:15:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 65ms (Views: 64.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2016-04-05 19:15:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (64.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.9ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (83.3ms)
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/angular.self-ebb3ae214db094f5ad3824c69b92b7c576e793fe5f2307aabbdce186e884383c.js?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/angular-resource.self-36da73106d179b808ab3301d2c926ff217b0e79762ec6009787ac719d5f5b8d4.js?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/assets/application.self-2975de362e3d28c0806bb2f15af9e87db587c2869e1f6b8f388a9c50db54e5dc.js?body=1" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/javascripts/application.js" for ::1 at 2016-04-05 19:15:54 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.9ms)
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 19:15:54 -0400
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2016-04-05 19:35:15 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (137.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (212.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 19:43:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 226ms (Views: 225.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2016-04-05 19:43:04 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.7ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (93.3ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/angular.self-ebb3ae214db094f5ad3824c69b92b7c576e793fe5f2307aabbdce186e884383c.js?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/angular-resource.self-36da73106d179b808ab3301d2c926ff217b0e79762ec6009787ac719d5f5b8d4.js?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/assets/application.self-2975de362e3d28c0806bb2f15af9e87db587c2869e1f6b8f388a9c50db54e5dc.js?body=1" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/javascripts/application.js" for ::1 at 2016-04-05 19:43:04 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (106.3ms)
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 19:43:04 -0400
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2016-04-05 19:47:30 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.9ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.7ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 19:50:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 86ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2016-04-05 19:50:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (89.5ms)
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 19:50:18 -0400
+
+
+Started GET "/javascripts/app.js" for ::1 at 2016-04-05 19:50:18 -0400
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/app.js"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (97.8ms)
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 19:50:19 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 19:52:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( app.js )` to `config/initializers/assets.rb` and restart your server):
+    4:   <title>Break Even</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application.js', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'app', 'data-turbolinks-track' => true %>
+    8: 
+    9:   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+   10:   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2300916921932720683_70232016435420'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (39.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (87.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 19:53:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( app.js )` to `config/initializers/assets.rb` and restart your server):
+    4:   <title>Break Even</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application.js', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'app', 'data-turbolinks-track' => true %>
+    8: 
+    9:   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+   10:   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2300916921932720683_70232016435420'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (44.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (78.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 19:53:25 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( app.js )` to `config/initializers/assets.rb` and restart your server):
+    4:   <title>Break Even</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application.js', 'data-turbolinks-track' => true %>
+    7:   <%= javascript_include_tag 'app', 'data-turbolinks-track' => true %>
+    8: 
+    9:   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+   10:   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2300916921932720683_70232016435420'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (45.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.8ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (85.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 19:54:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 281ms (Views: 272.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/app.self-7deeb814d3f9dc4097468e672748cf1dc37e8bb17ccc45d4e159c6092da8269a.js?body=1" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 19:54:15 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 19:55:47 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 221ms (Views: 220.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/angular.self-ebb3ae214db094f5ad3824c69b92b7c576e793fe5f2307aabbdce186e884383c.js?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/angular-resource.self-36da73106d179b808ab3301d2c926ff217b0e79762ec6009787ac719d5f5b8d4.js?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/app.self-0104d94a6f0ad22c806a0e0d85010b61988b7e6a2ed3aa37743aa5b71588e497.js?body=1" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 19:55:47 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 19:56:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/angular.self-ebb3ae214db094f5ad3824c69b92b7c576e793fe5f2307aabbdce186e884383c.js?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/angular-resource.self-36da73106d179b808ab3301d2c926ff217b0e79762ec6009787ac719d5f5b8d4.js?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/app.self-0104d94a6f0ad22c806a0e0d85010b61988b7e6a2ed3aa37743aa5b71588e497.js?body=1" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 19:56:37 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 19:57:50 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/angular.self-ebb3ae214db094f5ad3824c69b92b7c576e793fe5f2307aabbdce186e884383c.js?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/angular-resource.self-36da73106d179b808ab3301d2c926ff217b0e79762ec6009787ac719d5f5b8d4.js?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/app.self-0104d94a6f0ad22c806a0e0d85010b61988b7e6a2ed3aa37743aa5b71588e497.js?body=1" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 19:57:50 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 19:58:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/app.self-bea38f3a53de36b6ca5a3529d1e96c861f78812f44eada3828b679f843dc5e5a.js?body=1" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 19:58:51 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 20:04:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 86ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/app.self-3906ef180f8d5f26412de0adcd6d6ba6fdefe29cc86ba8e2d589a9a1e952dbcc.js?body=1" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 20:04:29 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 20:06:02 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:06:02 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:06:02 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/assets/app.self-3906ef180f8d5f26412de0adcd6d6ba6fdefe29cc86ba8e2d589a9a1e952dbcc.js?body=1" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 20:06:03 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 20:07:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/app.self-024b1454672be6806583f22b870762bd09138535ddf2899b61f270d8bb5ff601.js?body=1" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 20:07:51 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 20:15:10 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/assets/app.self-dc3d7bfee240f3066b4b6a487681ec353d5d4c299064eaf92f3870870b4953fa.js?body=1" for ::1 at 2016-04-05 20:15:10 -0400
+
+
+Started GET "/js/welcome.html" for ::1 at 2016-04-05 20:15:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/js/welcome.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.5ms)
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 20:15:11 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 20:16:41 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/app.self-09e2de487192926e3b13c27aa5a8118fe04d972d8ab71594aa84a95b00430019.js?body=1" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 20:16:41 -0400
+
+
+Started GET "/bob.html" for ::1 at 2016-04-05 20:16:58 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bob.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.8ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.8ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (110.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 20:17:18 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/app.self-5cdd4d15fd764cd2c8d66cbcbb428de449a79ad11841775f952648dd81c4154e.js?body=1" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 20:17:18 -0400
+
+
+Started GET "/bob.html" for ::1 at 2016-04-05 20:17:20 -0400
+
+ActionController::RoutingError (No route matches [GET] "/bob.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/iWyatt/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.1ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (88.8ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 20:19:22 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/app.self-08ffa63855263cf3f9ccac3feca701ec74884d79767e499605763c2ad5e37394.js?body=1" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 20:19:22 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 20:20:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:20:56 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 20:20:56 -0400
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/assets/app.self-08ffa63855263cf3f9ccac3feca701ec74884d79767e499605763c2ad5e37394.js?body=1" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 20:20:57 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 20:22:36 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( exercises.js )` to `config/initializers/assets.rb` and restart your server):
+     8:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+     9:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:   <%= javascript_include_tag 'app', 'data-turbolinks-track' => true %>
+    11:     <%= javascript_include_tag 'exercises', 'data-turbolinks-track' => true %>
+    12:   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    13: 
+    14:    <link href='https://fonts.googleapis.com/css?family=Montserrat+Subrayada:700,400' rel='stylesheet' type='text/css'>
+  app/views/layouts/application.html.erb:11:in `_app_views_layouts_application_html_erb__3325886843428433106_70299308689420'
+
+
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.4ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/iWyatt/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 20:23:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 299ms (Views: 289.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/days.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/drinks.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/exercises.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/application.self-4623d39c29c22217b3429104d889565d53537f31ed84ee8632ceb11bd7ba02e7.css?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/app.self-08ffa63855263cf3f9ccac3feca701ec74884d79767e499605763c2ad5e37394.js?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/exercises.self-82d13e6c8af2b35ce53888251cea6bbcb0330854fe1d7e62ac75aea6c7260e08.js?body=1" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 20:23:46 -0400
+
+
+Started GET "/" for ::1 at 2016-04-05 20:25:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 20:25:56 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-05 20:25:56 -0400
