@@ -189,3 +189,221 @@ ActionController::RoutingError (No route matches [GET] "/ngviews/myWeek.html"):
   Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
   Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (107.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-06 10:40:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-3972cde1d16831ed18a468a2e9e509f3abdd1ab8f889250b805aa7ccf70f4d94.js?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/application.self-147ef0661aef7aea4ceda7546d418d98d5d9f027786e6b4f708dfeace0f35c00.css?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/welcome.self-e5881a018cb8dfb3890b14592b3a0b1c095404bb2050e9ac71ff21ceec34eb35.css?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/days.self-79d941909d37a5e8425bfd57082a404adc5d3599c2cbf7cb6acd41212bd0f6b7.css?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/exercises.self-140057f3b5556ad20d5df781c566b326663408bdb3c67d47bafa50678fd6127d.js?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/days.self-45a03a0dfe5b818dd4a6deeaae0659e217f57b636915619c9d358e58260d4bef.js?body=1" for ::1 at 2016-04-06 10:40:03 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-06 10:40:04 -0400
+
+
+Started GET "/ngviews/myWeek.html" for ::1 at 2016-04-06 10:40:11 -0400
+
+ActionController::RoutingError (No route matches [GET] "/ngviews/myWeek.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/hilarymasland/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hilarymasland/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hilarymasland/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (36.9ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (82.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-06 10:43:34 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.self-3972cde1d16831ed18a468a2e9e509f3abdd1ab8f889250b805aa7ccf70f4d94.js?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/application.self-147ef0661aef7aea4ceda7546d418d98d5d9f027786e6b4f708dfeace0f35c00.css?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/welcome.self-e5881a018cb8dfb3890b14592b3a0b1c095404bb2050e9ac71ff21ceec34eb35.css?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/days.self-79d941909d37a5e8425bfd57082a404adc5d3599c2cbf7cb6acd41212bd0f6b7.css?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/exercises.self-140057f3b5556ad20d5df781c566b326663408bdb3c67d47bafa50678fd6127d.js?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/days.self-45a03a0dfe5b818dd4a6deeaae0659e217f57b636915619c9d358e58260d4bef.js?body=1" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-06 10:43:34 -0400
+
+
+Started GET "/ngviews/myWeek.html" for ::1 at 2016-04-06 10:43:46 -0400
+
+ActionController::RoutingError (No route matches [GET] "/ngviews/myWeek.html"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/hilarymasland/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/hilarymasland/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/hilarymasland/.rvm/rubies/ruby-2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (86.9ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.8ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/hilarymasland/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (92.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-06 10:46:46 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/cocoon.self-6874ad698cefd21cc1119b773550f61b5c1a60396460f015222af59293affe80.js?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/application.self-147ef0661aef7aea4ceda7546d418d98d5d9f027786e6b4f708dfeace0f35c00.css?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/app.self-3972cde1d16831ed18a468a2e9e509f3abdd1ab8f889250b805aa7ccf70f4d94.js?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/welcome.self-e5881a018cb8dfb3890b14592b3a0b1c095404bb2050e9ac71ff21ceec34eb35.css?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/days.self-79d941909d37a5e8425bfd57082a404adc5d3599c2cbf7cb6acd41212bd0f6b7.css?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/exercises.self-140057f3b5556ad20d5df781c566b326663408bdb3c67d47bafa50678fd6127d.js?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/days.self-45a03a0dfe5b818dd4a6deeaae0659e217f57b636915619c9d358e58260d4bef.js?body=1" for ::1 at 2016-04-06 10:46:46 -0400
+
+
+Started GET "/assets/belly.jpg" for ::1 at 2016-04-06 10:46:46 -0400

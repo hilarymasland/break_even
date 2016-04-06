@@ -15,17 +15,22 @@ Drink.destroy_all
 User.destroy_all
 Day.destroy_all
 
-Exercise.create(exercise_name: 'Stationary Bike', calories_burned: 8, quantity:'', reps:'', day:'')
-Exercise.create(exercise_name: 'Elliptical', calories_burned: 11, quantity:'', reps:'', day:'')
-Exercise.create(exercise_name: 'Running', calories_burned: 11, quantity:'', reps:'', day:'')
-Exercise.create(exercise_name: 'Pull Ups', calories_burned: 9, quantity:'', reps:'', day:'')
-Exercise.create(exercise_name: 'Push-ups', calories_burned: 9, quantity:'', reps:'', day:'')
-Exercise.create(exercise_name: 'Sit-ups', calories_burned: 9, quantity:'', reps:'', day:'')
-Exercise.create(exercise_name: 'Pilates', calories_burned: 3, quantity:'', reps:'', day:'')
-Exercise.create(exercise_name: 'Yoga', calories_burned: 3, quantity:'', reps:'', day:'')
-Exercise.create(exercise_name: 'Crunches', calories_burned: 3, quantity:'', reps:'', day:'')
-Exercise.create(exercise_name: 'Aerobics', calories_burned: 8, quantity:'', reps:'', day:'')
-Exercise.create(exercise_name: 'Dancing', calories_burned: 5, quantity:'', reps:'', day:'')
+Barbell_Bench_Press = Exercise.create(name:"Barbell Bench Press", calories_burned:"110", day: "", sets: "3", reps: "12")
+Push_up = Exercise.create(name:"Push Up", calories_burned:85, day: "", sets: "3", reps: "12")
+Sit_ups = Exercise.create(name:"Sit Ups", calories_burned:85, day: "", sets: "3", reps: "12")
+Wide_Grip_Lat_Pulldown = Exercise.create(name:"Wide Grip Lat Pulldown", calories_burned:111, day: "", sets: "3", reps: "12")
+Machine_Shoulder_Press = Exercise.create(name:"Machine Shoulder Press", calories_burned:115, day: "", sets: "3", reps: "12")
+Upright_Barbell_Row = Exercise.create(name:"Upright Barbell Row", calories_burned:95, day: "", sets: "3", reps: "12")
+Standing_Biceps_Cabel_Curl = Exercise.create(name:"Standing Biceps Cable Curl", calories_burned:89, day: "", sets: "3", reps: "12")
+EZ_Bar_Skullcrusher = Exercise.create(name:"EZ Bar Skullcrusher", calories_burned:93, day: "", sets: "3", reps: "12")
+Standing_Cable_Pushdown = Exercise.create(name:"Standing Cable Pushdown", calories_burned:81, day: "", sets: "3", reps: "12")
+Machine_Preacher_Curls = Exercise.create(name:"Machine Preacher Curls", calories_burned:68, day: "", sets: "3", reps: "12")
+Stationary_Bike = Exercise.create(name: "Stationary Bike", calories_burned:115, day: "", sets: "0" , reps: "12" )
+Elliptical = Exercise.create(name: "Elliptical", calories_burned: 109, day: "", minute: 15 )
+Running = Exercise.create(name: "Running", calories_burned: 125, day: "", minute: 15 )
+Dancing = Exercise.create(name: "Dancing", calories_burned: 118, day: "", minute: 15 )
+Aerobics = Exercise.create(name: "Aerobics", calories_burned: 203, day: "", minute: 15 )
+Pilates = Exercise.create(name: "Pilates", calories_burned: 39, day: "", minute: 15 )
 
 
 Drink.create(drink_type:'glass of red wine', calorie_count:80)
