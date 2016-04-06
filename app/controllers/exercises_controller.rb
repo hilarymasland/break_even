@@ -1,14 +1,19 @@
 class ExercisesController < ApplicationController
 
 def index
-  if (params[:user_id])
-    @user = User.find(params[:user_id])
-    @exercises = @user.exercises.all
-  else
-    @users = User.all
-    @exercises = @users.map{|s| s.exercises.last}.compact
+  respond_to do |format|
+    format.html
+    format.json { render json: Exercise.all}
   end
 end
+
+# if (params[:user_id])
+#   @user = User.find(params[:user_id])
+#   @exercises = @user.exercises.all
+# else
+#   @users = User.all
+#   @exercises = @users.map{|s| s.exercises.last}.compact
+# end
 
 def new
   @user = User.find(params[:user_id])
