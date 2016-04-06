@@ -12,4 +12,6 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( app.js )
 Rails.application.config.assets.precompile += %w( welcome.css )
 Rails.application.config.assets.precompile += %w( exercises.js )
+Rails.application.config.assets.precompile += %w( exercises.css )
 Rails.application.config.assets.precompile += %w( days.js )
+Rails.application.config.assets.precompile += %w( days.css )

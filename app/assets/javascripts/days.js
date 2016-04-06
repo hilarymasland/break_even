@@ -1,9 +1,9 @@
 "use strict";
-
+//
 (function (){
   angular
   .module("breakEven")
-  .controller("ExerciseIndexController", function(){
-    this.test = "days is working";
+  .controller("DayShowController", function(){
+    this.test = "day show is working";
   })
 })();
