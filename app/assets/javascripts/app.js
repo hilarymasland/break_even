@@ -21,25 +21,25 @@
       url: "/exercises",
       templateUrl: "ngviews/exercises.html",
       controller: "ExerciseIndexController",
-      controllerAs: "eindexVm"
+      controllerAs: "ExerciseIndexViewModel"
     })
-    // .state("grumbleNew", {
-    //   url: "/grumbles/new",
-    //   templateUrl: "js/grumbles/new.html",
-    //   controller: "GrumbleNewController",
-    //   controllerAs: "GrumbleNewViewModel"
-    // })
-    // .state("grumbleShow", {
-    //   url: "/grumbles/:id",
-    //   templateUrl: "js/grumbles/show.html",
-    //   controller: "GrumbleShowController",
-    //   controllerAs: "GrumbleShowViewModel"
-    // })
-    .state("grumbleEdit", {
-      url: "/grumbles/:id/edit",
-      templateUrl: "js/grumbles/edit.html",
-      controller: "GrumbleEditController",
-      controllerAs: "GrumbleEditViewModel"
+    .state("days", {
+    url: "/days",
+    templateUrl: "ngviews/myWeek.html",
+    controller: "DayIndexController",
+    controllerAs: "DayIndexViewModel"
+  })
+    .state("dayShow", {
+      url: "/day/:id",
+      templateUrl: "ngviews/day.html",
+      controller: "DayShowController",
+      controllerAs: "DayShowViewModel"
+    })
+    .state("dayEdit", {
+      url: "/day/:id/edit",
+      templateUrl: "ngviews/day/edit.html",
+      controller: "DayEditController",
+      controllerAs: "DayEditViewModel"
     })
   } // closes Router Function
 }());
