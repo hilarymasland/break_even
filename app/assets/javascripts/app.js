@@ -23,7 +23,7 @@
       controller: "ExerciseIndexController",
       controllerAs: "ExerciseIndexViewModel"
     })
-    .state("days", {
+    .state("dayIndex", {
     url: "/days",
     templateUrl: "ngviews/myWeek.html",
     controller: "DayIndexController",

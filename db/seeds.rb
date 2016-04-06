@@ -8,8 +8,9 @@
 # data = JSON.parse(File.read('db/exercises_data.json'))
 # Exercise.destroy_all
 # Exercise.create!(data)
-
+data = JSON.parse(File.read("db/exercises_data.json"))
 Exercise.destroy_all
+Exercise.create!(data)
 Drink.destroy_all
 User.destroy_all
 Day.destroy_all
