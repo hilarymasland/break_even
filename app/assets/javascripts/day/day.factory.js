@@ -7,3 +7,11 @@
     DayFactoryFunction
   ])
 })();
+
+function DayFactoryFunction(){
+  return {
+    helloWorld: function(){
+      console.log("hello world!");
+    }
+  }
+}
