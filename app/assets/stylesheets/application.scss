@@ -10,26 +10,20 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+
  *= require_self
  */
-/*// @import "bootstrap-sprockets";
-// @import "bootstrap";
-//
-// #nav1
-// {
-//   margin-top: -10px;
-// }*/
+
 *{
   box-sizing:border-box;
   font-family: 'Montserrat Subrayada', sans-serif;
 }
-.welcome-body{
-  background: url("../images/belly.jpg") no-repeat center center fixed;
-  background-size: cover;
+body{
+  margin:auto;
 }
+
 .new-body{
-  background: url("../images/barbell.jpg") no-repeat center center fixed;
+  background: url("barbell.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -48,10 +42,6 @@
 }
 .navbutton:hover {
   color: rgb(163, 22, 0);
-}
-
-body{
-  margin:auto;
 }
 
 .lead {
